@@ -180,7 +180,7 @@ paths:
       - "shoulder"
       summary: "Get shoulder location"
       description: ""
-      operationId: "readSholder"
+      operationId: "readShoulder"
       consumes:
       - "application/json"
       produces:
@@ -195,7 +195,7 @@ paths:
       - "shoulder"
       summary: "Set shoulder location"
       description: ""
-      operationId: "changeSholder"
+      operationId: "changeShoulder"
       consumes:
       - "application/json"
       produces:
