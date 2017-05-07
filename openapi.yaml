@@ -54,6 +54,46 @@ paths:
             $ref: "#/definitions/Location"
         405:
           description: "Invalid input"
+  /arm/grip/torque:
+    get:
+      tags:
+      - "grip"
+      summary: "Get grip torque"
+      description: ""
+      operationId: "readGripTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "grip"
+      summary: "Set grip torque"
+      description: ""
+      operationId: "changeGripTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "State object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+        405:
+          description: "Invalid input"
   /arm/wrist:
     get:
       tags:
@@ -92,6 +132,46 @@ paths:
           description: "Success"
           schema:
             $ref: "#/definitions/Location"
+        405:
+          description: "Invalid input"
+  /arm/wrist/torque:
+    get:
+      tags:
+      - "wrist"
+      summary: "Get wrist torque"
+      description: ""
+      operationId: "readWristTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "wrist"
+      summary: "Set wrist torque"
+      description: ""
+      operationId: "changeWristTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Sate object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
         405:
           description: "Invalid input"
   /arm/hand:
@@ -134,6 +214,46 @@ paths:
             $ref: "#/definitions/Location"
         405:
           description: "Invalid input"
+  /arm/hand/torque:
+    get:
+      tags:
+      - "hand"
+      summary: "Get hand torque"
+      description: ""
+      operationId: "readHandTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "hand"
+      summary: "Set hand torque"
+      description: ""
+      operationId: "changeHandTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "State object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+        405:
+          description: "Invalid input"
   /arm/elbow:
     get:
       tags:
@@ -172,6 +292,46 @@ paths:
           description: "Success"
           schema:
             $ref: "#/definitions/Location"
+        405:
+          description: "Invalid input"
+  /arm/elbow/torque:
+    get:
+      tags:
+      - "elbow"
+      summary: "Get elbow torque"
+      description: ""
+      operationId: "readElbowTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "elbow"
+      summary: "Set elbow torque"
+      description: ""
+      operationId: "changeElbowTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "State object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
         405:
           description: "Invalid input"
   /arm/shoulder:
@@ -214,6 +374,46 @@ paths:
             $ref: "#/definitions/Location"
         405:
           description: "Invalid input"
+  /arm/shoulder/torque:
+    get:
+      tags:
+      - "shoulder"
+      summary: "Get shoulder torque"
+      description: ""
+      operationId: "readShoulderTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "shoulder"
+      summary: "Set shoulder torque"
+      description: ""
+      operationId: "changeShoulderTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "State object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+        405:
+          description: "Invalid input"
   /arm/pivot:
     get:
       tags:
@@ -254,6 +454,46 @@ paths:
             $ref: "#/definitions/Location"
         405:
           description: "Invalid input"
+  /arm/pivot/torque:
+    get:
+      tags:
+      - "pivot"
+      summary: "Get pivot torque"
+      description: ""
+      operationId: "readPivotTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+    put:
+      tags:
+      - "pivot"
+      summary: "Set pivot torque"
+      description: ""
+      operationId: "changePivotTorque"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "State object"
+        required: true
+        schema:
+          $ref: "#/definitions/State"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/State"
+        405:
+          description: "Invalid input"
 definitions:
   Location:
     type: "object"
@@ -261,3 +501,8 @@ definitions:
       location:
         type: "number"
         format: "float"
+  State:
+    type: "object"
+    properties:
+      state:
+        type: "boolean"
